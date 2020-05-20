@@ -8,5 +8,5 @@ before_install:
 
 script:
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-- docker build -t wajika/elasticsearch:$(date +%Y.%m.%d) .
-- docker push wajika/elasticsearch:$(date +%Y.%m.%d)
+- docker build -t wajika/elasticsearch_with-xpack:$(date +%Y.%m.%d) .
+- docker push wajika/elasticsearch_with-xpack:$(date +%Y.%m.%d)
